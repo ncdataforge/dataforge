@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shield Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-body">
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contactos</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div class="text-section">
+            <h1>La seguridad que buscas, la confianza que mereces.</h1>
+        </div>
+
+        <div class="login-section">
+            <div class="logo-title">
+                <img src="{{ url_for('static', filename='logo.jfif') }}" alt="Logo Shield Bank" class="logo">
+                <h2>Shield Bank</h2>
+            </div>
+            
+
+            <!-- Formulario de login visual sin funcionalidad -->
+            <div class="login-visual">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <a href="#" class="forgot-password">Olvidé mi contraseña</a>
+                <button class="login-button">Iniciar sesión</button>
+            </div>
+
+            <!-- Enlace al formulario de asesores -->
+            <a href="{{ url_for('login') }}" class="advisor-login-link">Login para asesores</a>
+        </div>
+    </div>
+
+</body>
+</html>

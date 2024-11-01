@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Fraude</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="/logout" class="logout-button">Cerrar Sesión</a>  <!-- Botón de Logout -->
+
+    <div class="circle circle-large"></div>
+    <div class="circle circle-purple"></div>
+    <div class="circle circle-blue"></div>
+    <div class="circle circle-pink"></div>
+
+    <h1>Subir archivo para predicción de fraude</h1>
+    <form id="uploadForm" enctype="multipart/form-data" class="index_form">
+        <label class="file-label" for="file-input">Seleccionar archivo</label>
+        <input type="file" id="file-input" name="file" required onchange="updateFileName()">
+        <div class="selected-file" id="selected-file">Archivos seleccionados: Ninguno</div>
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Recordar que debe tener las columnas adecuadas.</p>
+    <p>Y NO DEBE CONTENER MÁS DE 999.999 FILAS</p>
+    <div class="status-container">
+        <div id="loading">Cargando<span id="dots">...</span></div>
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
