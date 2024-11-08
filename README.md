@@ -83,9 +83,13 @@ SECRET_KEY=clave_secreta_segura
 - Fraud.net. (s.f.). Detecting & Preventing New Account Fraud: Key Steps & Strategies. [Enlace](https://fraud.net/n/detecting-preventing-new-account-fraud-key-steps-strategies/)
 
 ## Video de presentación 🎥
-<a href="https://www.youtube.com/watch?v=HhxcTvS7Jlo" target="_blank">
-  <img src="https://github.com/user-attachments/assets/642f8f1b-2311-483b-bc97-d5c73ea362af" alt="Video">
-</a>
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=HhxcTvS7Jlo" target="_blank">
+    <img src="https://github.com/user-attachments/assets/642f8f1b-2311-483b-bc97-d5c73ea362af" alt="Video">
+  </a>
+</div>
+
 
 En este video puedes ver una demostración en vivo de la aplicación en funcionamiento.
 
